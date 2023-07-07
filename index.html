@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .flex-container > div {
+      width: 10%;
+      margin: 10px;
+    }
+    
+    .flex-container > div > input {
+      width: 100%;
+    }
+    </style>
+</head>
+
+<body>
+
+<h1>PVEステータス計算確認</h1>
+
+<div class="flex-container">
+    <div>
+    <label for="physicalDamage">物魔ダメージ:</label>
+    <input type="number" id="physicalDamage" name="physicalDamage" required value="30">
+    </div>
+
+    <div>
+        <label for="Damage">与ダメージ:</label>
+        <input type="number" id="Damage" name="Damage" required value="120">
+    </div>
+
+    <div>
+    <label for="intimidation">威圧:</label>
+    <input type="number" id="intimidation" name="intimidation" required value="1000">
+    </div>
+
+    <div>
+    <label for="bossDamage">ボスダメージ:</label>
+    <input type="number" id="bossDamage" name="bossDamage" required value="50">
+    </div>
+
+    <div>
+    <label for="monsterDamage">魔物ダメージ:</label>
+    <input type="number" id="monsterDamage" name="monsterDamage" required value="10">
+    </div>
+
+    <div>
+    <label for="abnormalDamage">異常ダメージ:</label>
+    <input type="number" id="abnormalDamage" name="abnormalDamage" required value="50">
+    </div>
+
+    <div>
+    <label for="highHPDamage">高HPダメージ:</label>
+    <input type="number" id="highHPDamage" name="highHPDamage" required value="100">
+    </div>
+
+    <div>
+    <label for="lowHPDamage">低HPダメージ:</label>
+    <input type="number" id="lowHPDamage" name="lowHPDamage" required value="100">
+    </div>
+
+    <div>
+    <label for="criticalDamage">会心ダメージ:</label>
+    <input type="number" id="criticalDamage" name="criticalDamage" required value="300">
+    </div>
+
+    <div>
+    <label for="criticalRate">会心率:</label>
+    <input type="number" id="criticalRate" name="criticalRate" required value="180">
+    </div>
+
+    <div>
+    <label for="damageMultiplier">ダメージ倍率:</label>
+    <input type="number" id="damageMultiplier" name="damageMultiplier" required value="4.99">
+    </div>
+
+    <div>
+    <label for="attack">攻撃力:</label>
+    <input type="number" id="attack" name="attack" required value="50000">
+    </div>
+
+    <div>
+    <label for="bossAttack">ボス攻撃:</label>
+    <input type="number" id="bossAttack" name="bossAttack" required value="5000">
+    </div>
+
+    <div>
+    <label for="monsterAttack">魔物攻撃:</label>
+    <input type="number" id="monsterAttack" name="monsterAttack" required value="1000">
+    </div>
+
+    <div>
+    <label for="defenseIgnore">防御無視:</label>
+    <input type="number" id="defenseIgnore" name="defenseIgnore" required value="80">
+    </div>
+
+<button onclick="calculate()">計算する</button>
+</div>
+
+<div id="resultArea" style="height: 100px;">
+<p id="result"></p>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
